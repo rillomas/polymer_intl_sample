@@ -1,0 +1,41 @@
+<link rel="import" href="packages/polymer/polymer.html">
+<polymer-element name="main-menu">
+  <template>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" >
+    <style>
+    </style>
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <a class="navbar-brand" href="/">intl sample</a>
+
+        <!-- Login/Logout buttons -->
+        <ul class="nav navbar-nav navbar-right">
+<!-- 
+          <li>
+            <core-item icon="account-circle" label="{{loginStr}}">
+              <a href="/login"></a>
+            </core-item>
+          </li>
+          <li>
+            <core-item icon="settings" label="{{settingStr}}">
+              <a href="/setting"></a>
+            </core-item>
+          </li>
+ -->        
+          <li>
+            <a href="/login">
+              <span class="glyphicon glyphicon-log-in"></span> {{loginStr}}
+            </a>
+          </li>
+          <li>
+            <a href="/setting">
+              <span class="glyphicon glyphicon-wrench"></span> {{settingStr}}
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+  </template>
+  <script type="application/dart" src="main_menu.dart"></script>
+</polymer-element>
