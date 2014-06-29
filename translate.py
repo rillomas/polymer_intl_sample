@@ -3,7 +3,9 @@ import subprocess
 # Script to extract and generate translation classes
 
 TARGET_FILES = [
+	"lib/components/main_app.dart",
 	"lib/components/main_menu.dart",
+	"lib/components/common_messages.dart",
 ]
 TRANSLATION_FILES = [
 	"lib/components/messages_all/translation_jp.json"

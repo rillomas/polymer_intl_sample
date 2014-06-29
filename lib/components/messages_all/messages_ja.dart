@@ -14,13 +14,25 @@ final messages = new MessageLookup();
 class MessageLookup extends MessageLookupByLibrary {
 
   get localeName => 'ja';
-  static login() => "ログイン";
+  static english() => "英語";
+
+  static hello() => "こんにちは";
+
+  static japanese() => "日本語";
+
+  static locale() => "ロケール";
 
   static setting() => "設定";
 
+  static user() => "ユーザー";
+
 
   final messages = const {
-    "login" : login,
-    "setting" : setting
+    "english" : english,
+    "hello" : hello,
+    "japanese" : japanese,
+    "locale" : locale,
+    "setting" : setting,
+    "user" : user
   };
 }

@@ -1,4 +1,4 @@
-<link rel="import" href="packages/polymer/polymer.html">
+<link rel="import" href="../../../packages/polymer/polymer.html">
 <polymer-element name="main-menu">
   <template>
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" >
@@ -10,21 +10,9 @@
 
         <!-- Login/Logout buttons -->
         <ul class="nav navbar-nav navbar-right">
-<!-- 
           <li>
-            <core-item icon="account-circle" label="{{loginStr}}">
-              <a href="/login"></a>
-            </core-item>
-          </li>
-          <li>
-            <core-item icon="settings" label="{{settingStr}}">
-              <a href="/setting"></a>
-            </core-item>
-          </li>
- -->        
-          <li>
-            <a href="/login">
-              <span class="glyphicon glyphicon-log-in"></span> {{loginStr}}
+            <a href="/user">
+              <span class="glyphicon glyphicon-user"></span> {{userStr}}
             </a>
           </li>
           <li>

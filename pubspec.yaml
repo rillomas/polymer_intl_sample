@@ -4,8 +4,7 @@ dependencies:
   polymer: any
   intl: any
   serialization: any
-  core_elements: any
 transformers:
 - polymer:
-    entry_points:
-    - web/index.html
+   entry_points:
+   - web/index.html

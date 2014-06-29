@@ -1,5 +1,9 @@
 {
   "_locale":"ja",
-  "login":"ログイン",
-  "setting":"設定"
+  "user":"ユーザー",
+  "hello":"こんにちは",
+  "setting":"設定",
+  "locale":"ロケール",
+  "japanese":"日本語",
+  "english":"英語"
 }

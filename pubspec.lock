@@ -25,10 +25,6 @@ packages:
     description: collection
     source: hosted
     version: "0.9.3+1"
-  core_elements:
-    description: core_elements
-    source: hosted
-    version: "0.0.6"
   csslib:
     description: csslib
     source: hosted
@@ -61,10 +57,6 @@ packages:
     description: polymer_expressions
     source: hosted
     version: "0.11.2"
-  quiver:
-    description: quiver
-    source: hosted
-    version: "0.18.2"
   serialization:
     description: serialization
     source: hosted

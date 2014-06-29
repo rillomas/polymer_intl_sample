@@ -1,8 +1,17 @@
-<link rel="import" href="packages/polymer/polymer.html">
+<link rel="import" href="../../../packages/polymer/polymer.html">
 <link rel="import" href="main_menu.html">
 <polymer-element name="main-app">
   <template>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" >
     <main-menu id="mainMenu" ></main-menu>
+    <div class="container">
+      <h2>{{helloStr}} {{userStr}}</h2>
+      <label>{{localeStr}}</label>
+      <select selectedIndex={{selectedLocale}}>
+        <option value="jp">{{japaneseStr}}</option>
+        <option value="en_US">{{englishStr}}</option>
+      </select>
+    </div>
   </template>
   <script type="application/dart" src="main_app.dart"></script>
 </polymer-element>
