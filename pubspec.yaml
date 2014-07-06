@@ -3,6 +3,7 @@ dependencies:
   logging: any
   polymer: any
   intl: any
+  petitparser: any
   serialization: any
 transformers:
 - polymer:

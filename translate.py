@@ -8,7 +8,7 @@ TARGET_FILES = [
 	"lib/components/common_messages.dart",
 ]
 TRANSLATION_FILES = [
-	"lib/components/messages_all/translation_jp.json"
+	"lib/components/messages_all/translation_jp.arb"
 ]
 TOOL_PATH = "tool"
 PACKAGE_ROOT = "packages"
@@ -17,10 +17,12 @@ OUTPUT_DIR = "lib/components/messages_all"
 def main():
 	targetFiles = " ".join(TARGET_FILES)
 	translationFiles = " ".join(TRANSLATION_FILES)
-	extract = "dart --package-root=%s %s/extract_to_json.dart --output-dir=%s %s" % (PACKAGE_ROOT, TOOL_PATH, OUTPUT_DIR, targetFiles)
+	extract = "dart --package-root=%s %s/extract_to_arb.dart --output-dir=%s %s" % (PACKAGE_ROOT, TOOL_PATH, OUTPUT_DIR, targetFiles)
+	print(extract)
 	p = subprocess.Popen(extract, stdout=subprocess.PIPE)
 	p.wait()
-	generate = "dart --package-root=%s %s/generate_from_json.dart --output-dir=%s %s %s" % (PACKAGE_ROOT, TOOL_PATH, OUTPUT_DIR, targetFiles, translationFiles)
+	generate = "dart --package-root=%s %s/generate_from_arb.dart --output-dir=%s %s %s" % (PACKAGE_ROOT, TOOL_PATH, OUTPUT_DIR, targetFiles, translationFiles)
+	print(generate)
 	p = subprocess.Popen(generate, stdout=subprocess.PIPE)
 	p.wait()
 
